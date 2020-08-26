@@ -15,7 +15,7 @@
 # limitations under the License.
 from __future__ import print_function
 
-from dusql.config import get_config, _construct_config
+from dusqlite.config import get_config, _construct_config
 import os
 
 
@@ -40,7 +40,7 @@ def test_tags():
 
 
 def test_read_config(tmpdir):
-    f = tmpdir / 'dusql.yaml'
+    f = tmpdir / 'dusqlite.yaml'
     f.write("""
     database: sqlite:///test.db
     """)

@@ -16,9 +16,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from dusql.check import DirectoryGroupReadable, OwnedBy
-from dusql.scan import scan
-from dusql.handler import get_path_id
+from dusqlite.check import DirectoryGroupReadable, OwnedBy
+from dusqlite.scan import scan
+from dusqlite.handler import get_path_id
 import pytest
 import argparse
 

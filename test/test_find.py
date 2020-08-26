@@ -14,8 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from dusql.find import *
-from dusql import model
+from dusqlite.find import *
+from dusqlite import model
 
 from conftest import count_files
 import os

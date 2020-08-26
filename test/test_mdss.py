@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from dusql.handler.mdss import *
+from dusqlite.handler.mdss import *
 
 import io
 import stat
@@ -71,5 +71,5 @@ def test_mode_to_octal():
 @pytest.mark.skipif(not os.environ.get('HOSTNAME', '').startswith('raijin'),
                     reason="Only available at NCI")
 def test_scan_mdss(conn):
-    from dusql.scan import scan
+    from dusqlite.scan import scan
     scan('mdss://w35/saw562', conn)

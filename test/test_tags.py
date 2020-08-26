@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 from __future__ import print_function
-from dusql.tags import *
+from dusqlite.tags import *
 
 
 def test_summarise(conn, sample_db, sample_data):

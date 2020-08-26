@@ -15,7 +15,7 @@
 # limitations under the License.
 from __future__ import print_function
 
-from dusql import model
+from dusqlite import model
 
 import sqlalchemy as sa
 from conftest import count_files

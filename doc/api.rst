@@ -5,33 +5,33 @@ Connecting to the database
 --------------------------
 
 The Dusql python interface is build around a SQLAlchemy database connection.
-Call :func:`dusql.db.connect` before anything else, and pass the connection
+Call :func:`dusqlite.db.connect` before anything else, and pass the connection
 object it returns to the other functions.
 
-.. autofunction:: dusql.db.connect
+.. autofunction:: dusqlite.db.connect
 
 Configuration
 -------------
 
-.. autodata:: dusql.config.schema
+.. autodata:: dusqlite.config.schema
     :annotation:
-.. autodata:: dusql.config.defaults
+.. autodata:: dusqlite.config.defaults
     :annotation:
-.. autofunction:: dusql.config.get_config
+.. autofunction:: dusqlite.config.get_config
 
 Importing paths
 ---------------
 
-.. autofunction:: dusql.scan.scan
+.. autofunction:: dusqlite.scan.scan
 
-.. autofunction:: dusql.scan.autoscan
+.. autofunction:: dusqlite.scan.autoscan
 
 Finding files
 -------------
 
-.. autofunction:: dusql.find.find
+.. autofunction:: dusqlite.find.find
 
 Reporting Usage
 ---------------
 
-.. autofunction:: dusql.report.report
+.. autofunction:: dusqlite.report.report

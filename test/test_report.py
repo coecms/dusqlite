@@ -15,7 +15,7 @@
 # limitations under the License.
 from __future__ import print_function
 
-from dusql.report import report
+from dusqlite.report import report
 
 def test_report(conn, sample_db, sample_data):
     r = report(conn, config={})

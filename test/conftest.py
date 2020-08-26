@@ -16,8 +16,8 @@
 
 import pytest
 
-from dusql.db import connect
-from dusql.scan import scan
+from dusqlite.db import connect
+from dusqlite.scan import scan
 import os
 
 

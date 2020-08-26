@@ -1,7 +1,7 @@
 {% set data = load_setup_py_data() %}
 
 package:
-    name: dusql
+    name: dusqlite
     version: {{ data['version'] }}
 
 source:
@@ -27,7 +27,7 @@ requirements:
 build:
     noarch: python
     script: 
-        - "${CC} ${CFLAGS} -fPIC -shared src/dusql/closure.c -o src/dusql/closure.so"
+        - "${CC} ${CFLAGS} -fPIC -shared src/dusqlite/closure.c -o src/dusqlite/closure.so"
         - "{{ PYTHON }} -m pip install . -vv"
 
 test:
@@ -39,10 +39,10 @@ test:
         - pytest
         - pytest-cov
     commands:
-        - py.test --cov dusql
+        - py.test --cov dusqlite
         - coverage combine .coverage
         - coverage xml -o {{ environ.get('PWD','') }}/coverage.xml
-        - dusql --help
+        - dusqlite --help
 
 about:
     home: {{ data['url'] }}

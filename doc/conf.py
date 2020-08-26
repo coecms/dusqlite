@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'dusql'
+project = 'dusqlite'
 copyright = '2019, Scott Wales'
 author = 'Scott Wales'
 

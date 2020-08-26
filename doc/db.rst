@@ -1,23 +1,23 @@
-.. automodule:: dusql.model
+.. automodule:: dusqlite.model
 
 Tables
 ------
 
-.. autodata:: dusql.model.paths
+.. autodata:: dusqlite.model.paths
     :annotation:
 
-.. autodata:: dusql.model.basenames
+.. autodata:: dusqlite.model.basenames
     :annotation:
 
-.. autodata:: dusql.model.paths_closure
+.. autodata:: dusqlite.model.paths_closure
     :annotation:
 
-.. autodata:: dusql.model.paths_descendants
+.. autodata:: dusqlite.model.paths_descendants
     :annotation:
 
-.. autodata:: dusql.model.paths_parents
+.. autodata:: dusqlite.model.paths_parents
     :annotation:
 
-.. autodata:: dusql.model.paths_fullpath
+.. autodata:: dusqlite.model.paths_fullpath
     :annotation:
 

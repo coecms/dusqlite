@@ -15,7 +15,7 @@
 # limitations under the License.
 from __future__ import print_function
 
-from dusql.cli import *
+from dusqlite.cli import *
 
 
 def test_parse_size():

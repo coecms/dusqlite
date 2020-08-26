@@ -14,8 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 from __future__ import print_function
-import dusql
+import dusqlite
 
 
 def test_import():
-    assert dusql.__version__ is not None
+    assert dusqlite.__version__ is not None

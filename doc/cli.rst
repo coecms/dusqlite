@@ -6,18 +6,18 @@ Configuration
 
 Dusql checks the following paths for configuration information:
 
- - $XDG_CONFIG_HOME/dusql.yaml
- - $HOME/.config/dusql.yaml
- - ./dusql.yaml
+ - $XDG_CONFIG_HOME/dusqlite.yaml
+ - $HOME/.config/dusqlite.yaml
+ - ./dusqlite.yaml
 
 You can see the current configuration by running::
 
-    $ dusql print-config
+    $ dusqlite print-config
 
 The configuration file is in YAML format, and should be structured like::
 
     # Path to the database
-    database: sqlite:////short/a12/abc123/tmp/dusql.db
+    database: sqlite:////short/a12/abc123/tmp/dusqlite.db
 
     # Tag definitions
     tags:
@@ -27,7 +27,7 @@ The configuration file is in YAML format, and should be structured like::
         conda:
             - /short/w35/saw562/conda
 
-Tags are used to categorise data in ``dusql report`` - files under the listed
+Tags are used to categorise data in ``dusqlite report`` - files under the listed
 directories are included in the tag total
 
 Importing paths
@@ -36,21 +36,21 @@ Importing paths
 Scan all files under ``$DIR`` into the database (or update existing records
 under ``$DIR``)::
 
-    $ dusql scan $DIR
+    $ dusqlite scan $DIR
 
 Finding files
 -------------
 
 Find files under ``$DIR``::
 
-    $ dusql find --older_than 1y --group w35 $DIR
+    $ dusqlite find --older_than 1y --group w35 $DIR
 
 Reporting Usage
 ---------------
 
 Print a summary of disk usage scanned into the database::
 
-    $ dusql report
+    $ dusqlite report
     Tags:
         umdata                    11.7 gb    65266
         conda                      8.8 gb   263338

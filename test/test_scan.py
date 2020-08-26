@@ -15,9 +15,9 @@
 # limitations under the License.
 
 
-from dusql.scan import scan
+from dusqlite.scan import scan
 
-from dusql import model
+from dusqlite import model
 import sqlalchemy as sa
 import os
 
