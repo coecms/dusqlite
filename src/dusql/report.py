@@ -69,8 +69,8 @@ def report(connection, config=None):
     Collect information for a filesystem report
  
     Args:
-        connection: Database connection from :func:`dusql.db.connect`
-        config: Configuration information from :func:`dusql.config.get_config`
+        connection: Database connection from :func:`dusqlite.db.connect`
+        config: Configuration information from :func:`dusqlite.config.get_config`
 
     Returns:
         A dict with usage information, following the pattern::

@@ -37,7 +37,7 @@ The :obj:``paths_fullpath`` view contains the full path to a file
 
 To use the views within sqlite the closure extension must be loaded, e.g. with::
 
-    .load src/dusql/closure
+    .load src/dusqlite/closure
 """
 
 from __future__ import print_function

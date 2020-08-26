@@ -141,7 +141,7 @@ def to_ncdu(findq, connection):
         tree[r.parent_id].append(tree[r.id])
 
     # Return the data ready to be converted to json
-    return [1, 1, {"progname": "dusql", "progver": __version__,
+    return [1, 1, {"progname": "dusqlite", "progver": __version__,
                    "timestamp": datetime.utcnow().timestamp()}, tree[None]]
 
 
@@ -150,7 +150,7 @@ def find(connection, path=None, older_than=None, user=None, group=None, exclude=
     Find files in the database
 
     Args:
-        connection: Database connection from :func:`~dusql.db.connect`
+        connection: Database connection from :func:`~dusqlite.db.connect`
         path: Parent path to search under
         user (str): Find files owned by this user name
         group (str): Find files owned by this group name
@@ -161,8 +161,8 @@ def find(connection, path=None, older_than=None, user=None, group=None, exclude=
 
     Returns a :obj:`sqlalchemy.sql.select` of filesystem URLs matching the constraint
 
-    The select has access to tables :obj:`~dusql.model.paths_fullpath` and
-    :obj:`~dusql.model.paths` for further querying
+    The select has access to tables :obj:`~dusqlite.model.paths_fullpath` and
+    :obj:`~dusqlite.model.paths` for further querying
     """
 
     j = (model.paths_fullpath

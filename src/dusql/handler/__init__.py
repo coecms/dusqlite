@@ -23,7 +23,7 @@ import urllib
 import pathlib
 import os
 
-#: URL schemes dusql knows how to scan
+#: URL schemes dusqlite knows how to scan
 scheme_handler = {
     '': file,
     'file': file,

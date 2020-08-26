@@ -22,18 +22,18 @@ import os.path
 import alembic.config
 import alembic
 
-default_url = 'sqlite:///dusql.sqlite'
+default_url = 'sqlite:///dusqlite.sqlite'
 
 
 def connect(url=default_url, echo=False):
     """
-    Connect to a Dusql database
+    Connect to a dusqlite database
 
     Args:
         url: SQLAlchemy compatible URL to the database
         echo (bool): Echo SQL commands to stderr
 
-    Returns a database ``connection`` to be passed to other dusql functions
+    Returns a database ``connection`` to be passed to other dusqlite functions
     """
     engine = sa.create_engine(url, echo=echo)
 
@@ -50,7 +50,7 @@ def connect(url=default_url, echo=False):
 
     # Apply migrations
     config = alembic.config.Config()
-    config.set_main_option('script_location', 'dusql:alembic')
+    config.set_main_option('script_location', 'dusqlite:alembic')
     config.attributes['connection'] = connection
     alembic.command.upgrade(config, 'head')
 

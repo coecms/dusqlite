@@ -117,7 +117,7 @@ def scan(url, connection):
 
     Args:
         url: Filesytem path/URL to scan
-        connection: Dusql database connection from :func:`~dusql.db.connect`
+        connection: dusqlite database connection from :func:`~dusqlite.db.connect`
     """
     scan_time = datetime.utcnow().timestamp()
 

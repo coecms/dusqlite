@@ -42,8 +42,8 @@ def get_config():
     cfg.VCS = "git"
     cfg.style = "pep440"
     cfg.tag_prefix = ""
-    cfg.parentdir_prefix = "dusql-"
-    cfg.versionfile_source = "src/dusql/_version.py"
+    cfg.parentdir_prefix = "dusqlite-"
+    cfg.versionfile_source = "src/dusqlite/_version.py"
     cfg.verbose = False
     return cfg
 

@@ -18,19 +18,19 @@
 Configuration
 =============
 
-Dusql uses a yaml configuration file
+dusqlite uses a yaml configuration file
 
 It will search the following paths in order:
 
-    $XDG_CONFIG_HOME/dusql.yaml
-    $HOME/.config/dusql.yaml
-    ./dusql.yaml
+    $XDG_CONFIG_HOME/dusqlite.yaml
+    $HOME/.config/dusqlite.yaml
+    ./dusqlite.yaml
 
 An example config file::
 
     ---
     # Path to the sqlite database
-    database: sqlite:////short/w35/saw562/dusql.db
+    database: sqlite:////short/w35/saw562/dusqlite.db
 
 """
 
@@ -74,7 +74,7 @@ schema = {
 
 #: Default configuration
 defaults = {
-    'database': f'sqlite:///{tempfile.gettempdir()}/{os.environ["USER"]}.dusql.db',
+    'database': f'sqlite:///{tempfile.gettempdir()}/{os.environ["USER"]}.dusqlite.db',
 }
 
 
@@ -98,9 +98,9 @@ def get_config(configfile=None):
     Gets the configuration, either from a named file or from the default paths
 
     If ``configfile`` is not specified, the following paths will be searched in order:
-     - $XDG_CONFIG_HOME/dusql.yaml
-     - $HOME/.config/dusql.yaml
-     - ./dusql.yaml
+     - $XDG_CONFIG_HOME/dusqlite.yaml
+     - $HOME/.config/dusqlite.yaml
+     - ./dusqlite.yaml
 
     Values not set in the config file will be defined from :obj:`defaults`
 
@@ -110,7 +110,7 @@ def get_config(configfile=None):
     Returns:
         A dict with the configuration values, matching schema :obj:`schema`
     """
-    filename = 'dusql.yaml'
+    filename = 'dusqlite.yaml'
 
     if configfile is None:
         configfile = os.path.join(os.environ.get(
