@@ -40,8 +40,8 @@ test:
         - pytest-cov
     commands:
         - py.test --cov dusqlite
-        - coverage combine .coverage
-        - coverage xml -o {{ environ.get('PWD','') }}/coverage.xml
+        # - coverage combine .coverage
+        # - coverage xml -o {{ environ.get('PWD','') }}/coverage.xml
         - dusqlite --help
 
 about:
