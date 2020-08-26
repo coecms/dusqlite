@@ -14,11 +14,11 @@ after_success:
         - ~/miniconda/bin/python-codacy-coverage -r coverage.xml
         - ~/miniconda/bin/codecov
         - touch doc/build/html/.nojekyll
-deploy:
-    provider: pages
-    skip_cleanup: true
-    github_token: $GITHUB_TOKEN
-    keep_history: true
-    local_dir: doc/build/html
-    on:
-        branch: master
+# deploy:
+#     provider: pages
+#     skip_cleanup: true
+#     github_token: $GITHUB_TOKEN
+#     keep_history: true
+#     local_dir: doc/build/html
+#     on:
+#         branch: master
